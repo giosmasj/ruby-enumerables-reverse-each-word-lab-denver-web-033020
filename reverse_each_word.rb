@@ -8,10 +8,8 @@ def reverse_each_word_each(string)
 end
 
 def reverse_each_word_collect(string)
-  original_array = string.split("")
+  original_array = string.split(" ")
   return_array = []
   return_array = original_array.collect {|word| word.reverse }
-  return_array.join("")
+  return_array.join(" ")
 end
-
-reverse_each_word_collect("Hello there, and how are you?")
